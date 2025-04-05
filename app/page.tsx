@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { ProductCard } from "@/components/product-card";
@@ -5,8 +7,10 @@ import { Shell } from "@/components/shell";
 import { Button } from "@/components/ui/button";
 import { products } from "@/lib/data/products";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/lib/hooks/useLanguage";
 
 export default function Home() {
+  const { t } = useLanguage();
   const featuredProducts = products.filter((product) => product.featured);
 
   return (
@@ -27,13 +31,13 @@ export default function Home() {
           <div className="container">
             <div className="max-w-xl space-y-6">
               <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-6xl fade-in">
-                Elevate Your Workspace
+                {t("heroTitle")}
               </h1>
               <p
                 className="text-white/90 text-xl leading-relaxed fade-in"
                 style={{ animationDelay: "0.2s" }}
               >
-                Premium desk accessories for productivity and comfort
+                {t("heroSubtitle")}
               </p>
               <div
                 className="flex flex-wrap gap-4 fade-in"
@@ -41,7 +45,7 @@ export default function Home() {
               >
                 <Link href="/products">
                   <Button size="lg" className="button-hover-effect">
-                    Shop Now
+                    {t("shopNow")}
                   </Button>
                 </Link>
                 <Link href="/products">
@@ -50,7 +54,7 @@ export default function Home() {
                     size="lg"
                     className="bg-white/10 backdrop-blur-sm text-white border-white/20 hover:bg-white/20 button-hover-effect"
                   >
-                    Browse Collection
+                    {t("browseCollection")}
                   </Button>
                 </Link>
               </div>
@@ -63,10 +67,10 @@ export default function Home() {
       <section className="container py-16 lg:py-24">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter lg:text-5xl">
-            Featured Products
+            {t("featuredProducts")}
           </h2>
           <p className="max-w-[700px] text-muted-foreground lg:text-xl">
-            Discover our most popular desk accessories
+            {t("featuredProductsSubtitle")}
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
@@ -81,7 +85,7 @@ export default function Home() {
               size="lg"
               className="button-hover-effect group"
             >
-              View All Products
+              {t("viewAllProducts")}
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
@@ -93,10 +97,10 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter lg:text-4xl mb-4">
-              Why Choose DeskMode
+              {t("whyChooseTitle")}
             </h2>
             <p className="max-w-[700px] mx-auto text-muted-foreground">
-              We create products that transform your workspace experience
+              {t("whyChooseSubtitle")}
             </p>
           </div>
 
@@ -120,10 +124,9 @@ export default function Home() {
                   <path d="M14 11V9a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v6c0 1.1.9 2 2 2h1a2 2 0 0 0 2-2v-2" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold">Ergonomic Design</h3>
+              <h3 className="text-xl font-semibold">{t("ergonomicDesign")}</h3>
               <p className="text-muted-foreground">
-                Products designed for comfort and productivity that adapt to
-                your needs
+                {t("ergonomicDesignDesc")}
               </p>
             </div>
             <div className="feature-card flex flex-col items-center text-center space-y-4">
@@ -144,11 +147,8 @@ export default function Home() {
                   <line x1="4" x2="4" y1="22" y2="15" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold">Premium Quality</h3>
-              <p className="text-muted-foreground">
-                Crafted with high-quality, durable materials for long-lasting
-                performance
-              </p>
+              <h3 className="text-xl font-semibold">{t("premiumQuality")}</h3>
+              <p className="text-muted-foreground">{t("premiumQualityDesc")}</p>
             </div>
             <div className="feature-card flex flex-col items-center text-center space-y-4">
               <div className="p-4 rounded-full bg-primary/10 mb-2">
@@ -168,10 +168,9 @@ export default function Home() {
                   <circle cx="12" cy="12" r="3" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold">Smart Integration</h3>
+              <h3 className="text-xl font-semibold">{t("smartIntegration")}</h3>
               <p className="text-muted-foreground">
-                Connect seamlessly with your devices for an enhanced workspace
-                experience
+                {t("smartIntegrationDesc")}
               </p>
             </div>
           </div>
@@ -183,15 +182,14 @@ export default function Home() {
         <div className="container">
           <div className="bg-primary/5 rounded-xl p-8 lg:p-12 flex flex-col items-center text-center">
             <h2 className="text-3xl font-bold tracking-tighter mb-4">
-              Ready to transform your workspace?
+              {t("ctaTitle")}
             </h2>
             <p className="max-w-[600px] text-muted-foreground mb-8">
-              Explore our collection and find the perfect accessories to enhance
-              your productivity and comfort.
+              {t("ctaSubtitle")}
             </p>
             <Link href="/products">
               <Button size="lg" className="button-hover-effect">
-                Shop All Products
+                {t("shopAllProducts")}
               </Button>
             </Link>
           </div>

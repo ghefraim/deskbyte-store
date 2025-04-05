@@ -5,13 +5,38 @@ export const translations = {
     // Navigation
     home: "Home",
     products: "Products",
+    contact: "Contact",
 
     // Home Page
     heroTitle: "Elevate Your Workspace",
     heroSubtitle: "Premium desk accessories for productivity and comfort",
-    featuredProducts: "Featured Products",
     shopNow: "Shop Now",
-    viewAll: "View All Products",
+    browseCollection: "Browse Collection",
+    featuredProducts: "Featured Products",
+    featuredProductsSubtitle: "Discover our most popular desk accessories",
+    viewAllProducts: "View All Products",
+
+    // Why Choose Section
+    whyChooseTitle: "Why Choose DeskMode",
+    whyChooseSubtitle:
+      "We create products that transform your workspace experience",
+
+    // Features
+    ergonomicDesign: "Ergonomic Design",
+    ergonomicDesignDesc:
+      "Products designed for comfort and productivity that adapt to your needs",
+    premiumQuality: "Premium Quality",
+    premiumQualityDesc:
+      "Crafted with high-quality, durable materials for long-lasting performance",
+    smartIntegration: "Smart Integration",
+    smartIntegrationDesc:
+      "Connect seamlessly with your devices for an enhanced workspace experience",
+
+    // Call to Action
+    ctaTitle: "Ready to transform your workspace?",
+    ctaSubtitle:
+      "Explore our collection and find the perfect accessories to enhance your productivity and comfort",
+    shopAllProducts: "Shop All Products",
 
     // Products Page
     allProducts: "All Products",
@@ -101,15 +126,40 @@ export const translations = {
     // Navigation
     home: "Acasă",
     products: "Produse",
-    cart: "Coș",
+    contact: "Contact",
 
     // Home Page
     heroTitle: "Îmbunătățește-ți Spațiul de Lucru",
     heroSubtitle:
       "Accesorii premium pentru birou pentru productivitate și confort",
-    featuredProducts: "Produse Recomandate",
     shopNow: "Cumpără Acum",
-    viewAll: "Vezi Toate Produsele",
+    browseCollection: "Vezi Colecția",
+    featuredProducts: "Produse Recomandate",
+    featuredProductsSubtitle:
+      "Descoperă cele mai populare accesorii pentru birou",
+    viewAllProducts: "Vezi Toate Produsele",
+
+    // Why Choose Section
+    whyChooseTitle: "De ce să alegi DeskMode",
+    whyChooseSubtitle:
+      "Creăm produse care îți transformă experiența spațiului de lucru",
+
+    // Features
+    ergonomicDesign: "Design Ergonomic",
+    ergonomicDesignDesc:
+      "Produse concepute pentru confort și productivitate care se adaptează nevoilor tale",
+    premiumQuality: "Calitate Premium",
+    premiumQualityDesc:
+      "Realizate cu materiale durabile de înaltă calitate pentru performanță de lungă durată",
+    smartIntegration: "Integrare Inteligentă",
+    smartIntegrationDesc:
+      "Conectare perfectă cu dispozitivele tale pentru o experiență îmbunătățită a spațiului de lucru",
+
+    // Call to Action
+    ctaTitle: "Ești gata să-ți transformi spațiul de lucru?",
+    ctaSubtitle:
+      "Explorează colecția noastră și găsește accesoriile perfecte pentru a-ți îmbunătăți productivitatea și confortul",
+    shopAllProducts: "Vezi Toate Produsele",
 
     // Products Page
     allProducts: "Toate Produsele",

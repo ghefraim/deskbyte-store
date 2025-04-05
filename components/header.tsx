@@ -56,6 +56,13 @@ export function Header() {
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link href="/contact" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    {t("contact")}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -119,6 +126,11 @@ export function Header() {
             <Link href="/cart" onClick={() => setIsMobileMenuOpen(false)}>
               <Button variant="ghost" className="w-full justify-start">
                 {t("cart")}
+              </Button>
+            </Link>
+            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button variant="ghost" className="w-full justify-start">
+                {t("contact")}
               </Button>
             </Link>
           </nav>
